@@ -1,0 +1,5 @@
+.o_content .o_form_view .o_form_sheet, .modal-content .o_form_view .o_form_sheet {
+  max-width: calc(100% - 32px);
+  overflow-x: auto;
+}
+

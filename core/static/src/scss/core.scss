@@ -1,0 +1,10 @@
+.o_form_view {
+    .o_td_label {
+        border:0 !important;
+    }
+}
+@sheet-max-width: 90%;
+
+[data-id="goods_id"] {
+    width: 20%;
+} 

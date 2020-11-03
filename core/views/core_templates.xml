@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<template id="assets_backend" name="Core" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <!--
+                One2many字段增加复制按钮
+                使用 options="{'color':'random'}" 来实现多对多控件标签显示随机颜色
+                 -->
+                <script type="text/javascript" src="/core/static/src/js/core.js"></script>
+                <script type="text/javascript" src="/core/static/src/js/list_renderer.js"></script>
+                <script type="text/javascript" src="/core/static/src/js/gooderp.js"></script>
+                <link rel="stylesheet" type="text/scss" href="/core/static/src/scss/core.scss"/>
+                <link rel="stylesheet" type="text/css" href="/core/static/src/scss/core.css"/>
+            </xpath>
+        </template>
+        <template id="web_login"  inherit_id="web.login" name="web_login" >
+             <!-- 登录界面email改成用户 -->
+             <xpath expr="//div[hasclass('form-group', 'field-login')]/label" position="replace">
+                 <div class="alert alert-warning">
+                     GoodERP是遵循 GNU AGPL-3 协议的自由软件，著作权属于上海开阖软件有限公司。
+                     <a href="http://osbzr.com/GoodERPJeff/gooderp" target="_blank">正式使用请购买代码库读取权限并升级到最新版</a>，
+                     避免已知的Bug造成数据丢失或业务系统停用。
+                 </div>
+                 <label for="login" class="control-label">用户</label>
+             </xpath>
+        </template>
+        <template id="menus_template" name="Menus List">
+                <div class="oe_structure">
+                    <div class="container">
+                        <center><h3>GoodERP 功能总览</h3></center>
+                        <t t-foreach="menus" t-as="menu">
+                           <div class="o_kanban_mobile">
+                           <h4><span t-esc="menu.name"/></h4>
+                           <div>
+                           <t t-foreach="menu.child_id" t-as="sub_menu">
+                               <h5><span t-esc="sub_menu.name"/></h5>
+                               <div t-if="sub_menu.child_id">
+                                   <t t-foreach="sub_menu.child_id" t-as="sub_sub_menu">
+                                        <a href="#"><span t-esc="sub_sub_menu.name"/></a>
+                                   </t>
+                               </div>
+                           </t>
+                           </div>
+                           </div>
+                        </t>
+                    </div>
+                </div>
+        </template>
+    </data>
+</openerp>

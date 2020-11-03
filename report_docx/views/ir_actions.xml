@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+        <record id="act_report_view" model="ir.ui.view">
+            <field name="name">ir.actions.report.template</field>
+            <field name="model">ir.actions.report</field>
+            <field name="inherit_id" ref="base.act_report_xml_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='attachment']" position="after">
+                    <field name="template_file" attrs="{'invisible':[('report_type','!=', 'docx')]}"/>
+                     <field name="output_type" attrs="{'invisible':[('report_type','!=', 'docx')]}"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
