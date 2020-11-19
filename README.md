@@ -1,4 +1,4 @@
-GoodERP 开源学习版
+GoodERP 普及版
 ----
 [![Join the chat at https://gitter.im/gooderp-study/community](https://badges.gitter.im/gooderp-study/community.svg)](https://gitter.im/gooderp-study/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License: AGPL-3](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](http://www.gnu.org/licenses/agpl-3.0-standalone.html)
@@ -9,7 +9,7 @@ http://www.gooderp.org
 
 基于 Odoo 13 社区版运行环境，Python3.6+, postgreSQL 10+
 
-代码基于 http://osbzr.com/GoodERPJeff/gooderp 2020年2月20日版本, 正式使用请加入GoodERP开源俱乐部，只需一次性缴纳会员费人民币5000元，即可获取会员专属代码库读取权限，终身免费修复Bug和增加功能，更能参与制定GoodERP发展规划，贡献代码获取高额现金奖励。
+【普及版】代码基于 http://osbzr.com/GoodERPJeff/gooderp 2020年2月20日版本, 正式使用请加入GoodERP开源俱乐部，只需一次性缴纳会员费人民币5000元，即可获取会员专属【最新版】代码库读取权限，终身免费修复Bug和增加功能，更能参与制定GoodERP发展规划，贡献代码获取高额现金奖励。
 
 关于 GoodERP
 ----
